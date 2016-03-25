@@ -28,6 +28,8 @@ toc: true
 
 其中，start_color为颜色变化的起始端，end_color为颜色变化的结束端。
 
+<!--more-->
+
 ## 参考
 
 * [Hexo彩色云标签](http://starsky.gitcafe.io/2015/05/16/Hexo%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E4%BA%91/)

@@ -22,6 +22,8 @@ duoshuo_shortname: XXX
 
 以landscape-plus主题为例：
 
+<!--more-->
+
 在landscape-plus\layout\_widget\目录下新建recent_comments.ejs文件，内容如下：
 
 ```bash

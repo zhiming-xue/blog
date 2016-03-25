@@ -15,6 +15,8 @@ git clone https://github.com/xiangming/landscape-plus.git themes/landscape-plus
 
 * 然后修改根目录下的配置文件_config.yml, 把theme选项的值设置为：landscape-plus。
 
+<!--more-->
+
 * 配置主题目录下的配置文件_config.yml， 把menu菜单项中的各选项配置为自己喜欢的样式，比如把英文的菜单改为中文的。
 
 ```bash

@@ -19,6 +19,8 @@ toc: true
 
 ## 网站访问量统计
 
+<!--more-->
+
 打开themes/landscape-plus/layout/_partial/footer.ejs，在需要的地方添加下面的代码，可以选择添加任意一种代码或同时添加两种代码。
 算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量。
 
