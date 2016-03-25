@@ -34,7 +34,8 @@ duoshuo_shortname: XXX
 <% } %>
 ```
 
-注：其中上述代码第5行<ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></ul>按照官方提示可以自行修改：
+注：其中上述代码第5行`<ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></ul>`按照官方提示可以自行修改：
+
 
 ```bash
 //以下参数均为可选
