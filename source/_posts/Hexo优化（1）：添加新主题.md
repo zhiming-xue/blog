@@ -1,7 +1,8 @@
 ---
 title: Hexo优化（1）：添加新主题
 date: 2016-03-24 19:31:54
-tags: [Hexo]
+tags: Hexo
+toc: true
 ---
 
 ## 配置主题landscape-plus
@@ -27,5 +28,5 @@ menu:
 
 Hexo的其他主题安装配置也是类似的，大家可以去[Hexo主题官网](https://hexo.io/themes/)下载自己喜欢的主题。
 
-### 参考：
+## 参考
 * [Hexo主题配置与优化(1)](http://starsky.gitcafe.io/2015/05/05/Hexo%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/)

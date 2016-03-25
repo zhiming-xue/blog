@@ -1,7 +1,8 @@
 ---
 title: Hexo优化（4）：添加多说评论最近评论
 date: 2016-03-24 20:13:37
-tags: [Hexo]
+tags: Hexo
+toc: true
 ---
 
 ## 安装多说评论系统
@@ -60,6 +61,6 @@ widgets:
 - recent_comments
 ```
 
-### 参考：
+## 参考
 
 [如何搭建一个独立博客](http://www.jianshu.com/p/05289a4bc8b2#)

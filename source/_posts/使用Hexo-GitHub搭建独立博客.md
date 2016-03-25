@@ -5,7 +5,7 @@ tags: [Hexo, GitHub]
 toc: true
 ---
 
-### 什么是博客
+## 什么是博客
 
 个人感觉博客就是在线的公开日记本，用来记录一些东西，或好、或环，都值得一记。
 并且个人感觉，不要把博客弄得太社交化（或许本人只是太喜欢安静的思考和写些东西），太社交化容易使作者分心，哈哈，这也只是本人的个人看法了。
@@ -14,21 +14,21 @@ toc: true
 
 >博客 (Blog) 是 (Web log 网络日志）的简称，又译为网络日志、部落格或部落阁等，是一种通常由个人管理、不定期张贴新的文章的网站。博客上的文章通常根据张贴时间，以倒序方式由新到旧排列。许多博客专注在特定的课题上提供评论或新闻，其他的则被作为比较个人的日记。
 
-### 为什么搭建独立博客
+## 为什么搭建独立博客
 
 对于这个问题，我只想借用 Linus 的一句话：“just for fun.”
 
-### 选择什么方式搭建
+## 选择什么方式搭建
 
 既然喜欢折腾，那就折腾到底呗，所以，我就选用 Github + Hexo 去搭建独立的博客。
 
-### 搭建过程
+## 搭建过程
 
-#### 在 GitHub 创建一个特殊仓库
+### 在 GitHub 创建一个特殊仓库
 
 注意仓库命名得是：username.github.io【username 为你 GitHub 账户名称，如果没有 GitHub 账户，那就请先注册吧】
 
-#### 在本地电脑上下载安装 [Hexo](https://hexo.io/zh-cn/docs/index.html)，并配置好相关环境
+### 在本地电脑上下载安装 [Hexo](https://hexo.io/zh-cn/docs/index.html)，并配置好相关环境
 
 首先，请先去 Hexo 官网查看下 Hexo 的介绍文档吧。
 
@@ -62,11 +62,11 @@ $ npm install -g hexo-cli
 ``` bash
 $ sudo apt-get install npm
 ```
-### 发布文章
+## 发布文章
 
 现在，所有环境已经配置完毕了，让我们开始创建第一个博客站点吧。
 
-#### 建站
+### 建站
 
 ``` bash
 $ hexo init folder
@@ -88,7 +88,7 @@ $ npm install
 ```
 （注解：folder 指的是，网站博客的根目录）
 
-#### 写博客
+### 写博客
 
 站点新建完毕后可以开始写博客了。
 
@@ -106,7 +106,7 @@ $ hexo g && hexo s
 ```
 打开 http://localhost:4000 就可以看到网站博客了。
 
-#### 部署到 GitHub 上
+### 部署到 GitHub 上
 
 首先得安装 [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git)
 
@@ -122,7 +122,7 @@ repo:repository url
 ```
 （repository url 指的是你先前创建的仓库的公网访问地址，既 https://username.github.io）
 
-### 总结
+## 总结
 
 在此，我们就初步成功搭建完了我们的独立博客了，嘻嘻。
 至于美化、优化等步骤，有兴趣的可以慢慢折腾，我也会继续折腾我的博客的。

@@ -5,12 +5,12 @@ tags: [Hexo, Landscape]
 toc: true
 ---
 
-### 声明
+## 声明
 本文转载自：[The Bloom of Youth|锦瑟华年](http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/)
 
 Hexo 博客系统的核心支持生成目录（Table of Contents），但其默认的主题 Landscape 并不支持目录的显示。我们只需对 Landscape 的主题文件稍作修改并添加一点目录的 CSS 就可以在文章前面显示友好的目录了。
 
-### 修改 Landscape 主题的 ejs 文件
+## 修改 Landscape 主题的 ejs 文件
 
 我们首先要编辑文章显示页面的模板，也就是 themes/landscape/layout/_partial/article.ejs 文件。为了将目录生成在正文之前，我们首先在这个文件中找到<%- post.content %>，并在这一行之前加入如下代码：
 
@@ -29,7 +29,7 @@ Hexo 博客系统的核心支持生成目录（Table of Contents），但其默�
 修改完这个文件之后，找一篇包含了多个子标题的文章，并在文章开头的 front-matter 中添加一句 toc: true，在浏览器中访问这篇文章，应该可以看到文章的开头处已经有了带链接的目录。但是这样的目录实在太难看，我们还需要添加相应的 CSS 来将其指定为我们想要的样式。
 
 
-### 为目录编写 CSS 文件
+## 为目录编写 CSS 文件
 
 要指定目录的样式，我们要修改的文件是 themes/landscape/source/css/_partial/article.styl。在文件的最后，添加如下代码：
 
@@ -70,7 +70,7 @@ margin-left 1em
 
 再次生成页面，应该已经可以显示比较美观的目录了。
 
-### 收尾工作
+## 收尾工作
 
 通常情况下我们不需要为每一篇文章都添加目录，因为大部分文章的长度还是相对较短，或者结构简单而没有添加小标题。在我的博客上，需要添加目录的长文还是相对较少的。因为我选择了默认不生成目录，而手动为需要目录的文章添加显式地标记。
 
