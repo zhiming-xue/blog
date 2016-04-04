@@ -262,3 +262,4 @@ hello-1.0.tar.gz
 ## 参考
 
 - [autotools系列工具--自动生成Makefile](http://www.worldhello.net/2010/04/07/954.html)
+- [autotools官方教程](https://www.lrde.epita.fr/~adl/dl/autotools.pdf)
