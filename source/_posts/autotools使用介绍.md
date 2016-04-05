@@ -9,8 +9,8 @@ toc: true
 
 在较大项目中, 如果手动维护Makefile, 那将是一件复杂并痛苦的事情. 那么, 有没有一种轻松的手段生成Makefile呢? autotools系列工具正是在这样的呼声中诞生的. 它只需用户输入简单的目标文件, 依赖文件, 文件目录等就可以轻松地生成Makefile了. 另外, 这些工具还可以完成系统配置信息的收集, 从而可以方便地处理各种移植性问题. autotools是系列工具, 它含有:
 
-- aclocal
 - autoscan
+- aclocal
 - autoconf
 - autoheader
 - automake
@@ -31,6 +31,8 @@ int main()
 ```
 
 ### 使用autoscan命令自动生成configure.scan文件
+
+<!--more-->
 
 它会在给定目录及其子目录树中检查源文件, 若没有给出目录, 就在当前目录及其子目录树中进行检查.它会搜索源文件以寻找一般的移植性问题并创建一个文件"configure.scan", 该文件就是接下来autoconf要用到的"configure.ac"原型.
 
@@ -200,6 +202,7 @@ autoscan.log    config.log   configure.in   install-sh  Makefile.in
 
 autotools生成Makefile流程图如下: 
 
+![autotools生成的Makefile流程图](http://7xsd89.com1.z0.glb.clouddn.com/autotools_1.jpg)
 ![autotools生成Makefile的流程图](http://7xsd89.com1.z0.glb.clouddn.com/autotools_process_meitu_1.jpg)
 
 ## 使用由autotools生成的Makefile
@@ -213,7 +216,7 @@ autotools生成的Makefile具有以下主要功能:
 ```bash
 username@pc:~/automake$ make
 make  all-am
-make[1]: Entering directory `/home/username/automake'
+make[1]: Entering directory '/home/username/automake'
 gcc -DHAVE_CONFIG_H -I.     -g -O2 -MT hello.o -MD -MP -MF .deps/hello.Tpo -c -o hello.o hello.c
 mv -f .deps/hello.Tpo .deps/hello.Po
 gcc  -g -O2   -o hello hello.o
@@ -262,4 +265,4 @@ hello-1.0.tar.gz
 ## 参考
 
 - [autotools系列工具--自动生成Makefile](http://www.worldhello.net/2010/04/07/954.html)
-- [autotools官方教程](https://www.lrde.epita.fr/~adl/dl/autotools.pdf)
+- [autotools官方教程文档](https://www.lrde.epita.fr/~adl/dl/autotools.pdf)
