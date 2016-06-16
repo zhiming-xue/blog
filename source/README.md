@@ -1,5 +1,5 @@
 # 我的独立博客
-### --[在角落的一只猫](http://violetlove.github.io)
+### --[在角落的一只猫](http://crane-yuan.github.io)
 
 ## 简介
 
@@ -9,6 +9,6 @@
 
 邮箱：yuanxingnepu@gmail.com
 
-GitHub：https://github.com/VioletLove
+GitHub：https://github.com/crane-yuan
 
 qq：1182248598

@@ -11,5 +11,4 @@ date: 2016-03-20 19:11:23
 ## 联系方式
 
 - 【邮箱】：[yuanxingnepu@gmail.com](yuanxingnepu@gmail.com)
-- 【GitHub】：[VioletLove](https://github.com/VioletLove)
-
+- 【GitHub】：[crane-yuan](https://github.com/crane-yuan)
