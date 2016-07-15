@@ -104,10 +104,17 @@ sitemap:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: rsync
+  host: 23.105.206.72
+  user: crane
+  root: /home/crane/blog
+  port: 27134
+  delete: true
+  verbose: true
+  ignore_errors: false
+- type: git
   repo: https://github.com/crane-yuan/crane-yuan.github.io
   branch: master
 
 # Duoshuo
 duoshuo_shortname: daemonghost
-
