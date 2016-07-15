@@ -17,6 +17,8 @@ categories: Linux
 
 因为不同的发行版有不同的软件包管理机制，所以在此我只简单介绍ArchLinux和Ubuntu的源码下载方法，其他的发行版请自行参考网上相关文档。
 
+<!--more-->
+
 ### **ArchLinux下通过abs(Arch Build System)下载**
 
 首先，通过pacman安装abs工具

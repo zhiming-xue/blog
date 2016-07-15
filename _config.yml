@@ -72,7 +72,7 @@ time_format: HH:mm:ss
 ## pagination_dir: page
 
 index_generator:
-  per_page: 9 ##首页默认9篇文章标题 如果值为0不分页
+  per_page: 5 ##首页默认9篇文章标题 如果值为0不分页
 archive_generator:
     per_page: 100 ##归档页面默认100篇文章标题
     yearly: true  ##生成年视图
@@ -104,14 +104,6 @@ sitemap:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: rsync
-  host: 23.105.206.72
-  user: crane
-  root: /home/crane/blog
-  port: 27134
-  delete: true
-  verbose: true
-  ignore_errors: false
 - type: git
   repo: https://github.com/crane-yuan/crane-yuan.github.io
   branch: master
