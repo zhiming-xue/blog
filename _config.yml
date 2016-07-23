@@ -13,7 +13,7 @@ timezone: UTC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://crane-yuan.github.io
+url: http://crane-yuan.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,8 +104,8 @@ sitemap:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  repo: https://github.com/crane-yuan/crane-yuan.github.io
+  type: git
+  repo: http://github.com/crane-yuan/crane-yuan.github.io
   branch: master
 
 # Duoshuo
