@@ -12,8 +12,8 @@ language: zh-CN
 timezone: UTC
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://crane-yuan.github.io
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://crane-yuan.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -62,7 +62,7 @@ tag: 1
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
+## https://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
@@ -83,8 +83,8 @@ category_generator:
     per_page: 100 ###分类页面默认100篇文章
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+## Plugins: httpss://hexo.io/plugins/
+## Themes: httpss://hexo.io/themes/
 theme: landscape-plus
 
 Plugins: 
@@ -105,7 +105,7 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: http://github.com/crane-yuan/crane-yuan.github.io
+  repo: https://github.com/crane-yuan/crane-yuan.github.io
   branch: master
 
 # Duoshuo

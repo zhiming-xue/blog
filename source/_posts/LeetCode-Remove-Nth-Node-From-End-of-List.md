@@ -3,7 +3,7 @@ title: LeetCode-Remove Nth Node From End of List
 date: 2016-06-06 11:12:17
 tags: LeetCode
 toc: true
-categories: Algorithm
+categories: 算法
 ---
 
 ## Question

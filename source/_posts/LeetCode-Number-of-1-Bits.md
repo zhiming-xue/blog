@@ -3,7 +3,7 @@ title: LeetCode-Number of 1 Bits
 date: 2016-05-18 18:50:41
 tags: LeetCode
 toc: true
-categories: Algorithm
+categories: 算法
 ---
 
 ## Question

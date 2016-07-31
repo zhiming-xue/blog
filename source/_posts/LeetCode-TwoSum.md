@@ -3,7 +3,7 @@ title: LeetCode-TwoSum
 date: 2016-05-06 18:07:52
 tags: LeetCode
 toc: true
-categories: Algorithm
+categories: 算法
 ---
 
 ## Question
