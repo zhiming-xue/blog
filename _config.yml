@@ -8,7 +8,7 @@ subtitle:
 description: 时光静好，我只愿用文字去记录一些琐事，以待流年回首。
 author: Yohann
 email: yuanxingnepu@gmail.com
-language: zh-CN
+language: zh-Hans
 timezone: UTC
 
 # URL
@@ -51,14 +51,6 @@ default_category: uncategorized
 category_map:
 tag_map:
 
-# Archives
-## 2: Enable pagination
-## 1: Disable pagination
-## 0: Fully Disable
-archive: 1
-category: 1
-tag: 1
-
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
@@ -74,18 +66,18 @@ time_format: HH:mm:ss
 index_generator:
   per_page: 5 ##首页默认9篇文章标题 如果值为0不分页
 archive_generator:
-    per_page: 100 ##归档页面默认100篇文章标题
+    per_page: 0 ##归档页面默认100篇文章标题
     yearly: true  ##生成年视图
     monthly: true ##生成月视图
 tag_generator:
-    per_page: 100 ##标签分类页面默认100篇文章
+    per_page: 0 ##标签分类页面默认100篇文章
 category_generator: 
-    per_page: 100 ###分类页面默认100篇文章
+    per_page: 0 ###分类页面默认100篇文章
 
 # Extensions
 ## Plugins: httpss://hexo.io/plugins/
 ## Themes: httpss://hexo.io/themes/
-theme: landscape-plus
+theme: yelee
 
 Plugins: 
 - hexo-generator-feed
@@ -110,3 +102,24 @@ deploy:
 
 # Duoshuo
 duoshuo_shortname: daemonghost
+
+# https://github.com/unhealthy/hexo-all-minifier
+html_minifier:
+  enable: false
+  exclude: 
+
+css_minifier:
+  enable: false
+  exclude: 
+
+js_minifier:
+  enable: false
+  mangle: true
+
+image_minifier:
+  enable: false
+  interlaced: true
+  multipass: true
+  optimizationLevel: 2
+  pngquant: false
+  progressive: true
