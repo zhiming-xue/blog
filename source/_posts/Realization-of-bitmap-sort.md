@@ -30,7 +30,7 @@ toc: true
 
 <!--more-->
 
-```c
+``` java
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -136,4 +136,3 @@ void bitmap_sort()
     fclose(out);
 }
 ```
-
