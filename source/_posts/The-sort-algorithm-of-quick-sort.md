@@ -12,6 +12,8 @@ categories: 算法
 
 ![快速排序演示动画1](http://img.blog.csdn.net/20160902204233276)
 
+<!--more-->
+
 ## 算法步骤
 
 快速排序使用分治法（Divide and conquer）策略来把一个序列（list）分为两个子序列（sub-lists）。
