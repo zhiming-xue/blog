@@ -47,8 +47,7 @@ function quicksort(q)
 
 ## 代码实现（java）
 
-```
-
+``` java
 /**
  *
  * @Description: 快速排序，递归版

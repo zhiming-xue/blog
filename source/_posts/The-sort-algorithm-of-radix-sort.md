@@ -26,18 +26,18 @@ categories: 算法
 
 ## 代码实现（java）
 
-```
+``` java
 /**
  *
  * Description: 基数排序的简单实现，目前只能排序正整数
+ *
  * @param: nums
- * @param: @return
  * @return: int[]
  * @throws
  */
 public static int[] radixSort(int[] nums)
 {
-    int BASE = 10;			// 整数基数
+    int BASE_NUM = 10; // 整数基数
     int len = nums.length;
     int[] buffer = new int[len];
 
@@ -51,7 +51,7 @@ public static int[] radixSort(int[] nums)
     }
 
     while (maxValue / exp > 0) {
-        int[] bucket = new int[BASE];
+        int[] bucket = new int[BASE_NUM];
 
         for (int i = 0; i < bucket.length; i++) {
             bucket[i] = 0;
@@ -59,26 +59,27 @@ public static int[] radixSort(int[] nums)
 
         // 从数的低位开始进行桶排序
         for (int i = 0; i < len; i++) {
-            bucket[(nums[i] / exp) % BASE]++;
+            bucket[(nums[i] / exp) % BASE_NUM]++;
         }
 
-        // 按照当前位给nums排序，确定各个数对应的大概位置buket[(nums[i] / exp) % BASE]的值
+        // 按照当前位给nums排序
+        // 确定各个数对应的大概位置buket[(nums[i] / exp) % BASE]的值
         // 即为新位置的下标
-        for (int i = 1; i < BASE; i++) {
+        for (int i = 1; i < BASE_NUM; i++) {
             bucket[i] += bucket[i - 1];
         }
 
         // 按当前位进行排序存入到新数组
         for (int i = len - 1; i >= 0; i--) {
-            int index = (nums[i] / exp) % BASE;
-            buffer[--bucket[(nums[i] / exp) % BASE]] = nums[i];
+            int index = (nums[i] / exp) % BASE_NUM;
+            buffer[--bucket[(nums[i] / exp) % BASE_NUM]] = nums[i];
         }
 
         for (int i = 0; i < len; i++) {
             nums[i] = buffer[i];
         }
 
-        exp *= BASE;
+        exp *= BASE_NUM;
     }
     return nums;
 }
