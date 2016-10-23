@@ -6,29 +6,6 @@ toc: true
 categories: 算法
 ---
 
-## 前言
-
-排序算法是一种能将一串数据依照特定排序方式进行排列的一种算法。最常用到的排序方式是***数值顺序***以及***字典顺序***。
-
-有效的排序算法在一些算法（例如搜索算法与合并算法）中是重要的，如此这些算法才能得到正确解答。排序算法也用在处理文字数据以及产生人类可读的输出结果。基本上，排序算法的输出必须遵守下列两个原则：
-
-- 输出结果为递增序列（递增是针对所需的排序顺序而言）
-- 输出结果是原输入的一种排列、或是重组
-
-
-### 排序算法分类
-
-在计算机科学所使用的排序算法通常被分类为：
-
-- 计算的时间复杂度（最差、平均、和最好性能），依据列表（list）的大小(n)。一般而言，好的性能是O(n log n)，且坏的性能是O(n2)。对于一个排序理想的性能是O(n)。仅使用一个抽象关键比较运算的排序算法总平均上总是至少需要O(n log n)。
-- 内存使用量（以及其他电脑资源的使用）
-- **稳定性**：稳定排序算法会让原本有相等键值的纪录维持相对次序。也就是如果一个排序算法是稳定的，当有两个相等键值的纪录R和S，且在原本的列表中R出现在S之前，在排序过的列表中R也将会是在S之前。
-- 依据排序的方法：`插入、交换、选择、合并`等等。
-
-
-<!--more-->
-
-![排序算法比较](http://img.blog.csdn.net/20160828112755020)
 ## 定义
 
 > 冒泡排序（英语：Bubble Sort）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。
@@ -59,33 +36,56 @@ function bubble_sort (array, length) {
 
 ## 代码实现（java）
 
+### 一般实现
+
 ``` java
 /**
  *
- * @Title: bubbleSort
- * @Description: 冒泡排序的简单实现
+ * Description: 冒泡排序简单实现
  *
- *               支持泛型
- * @param: @param <E>
- * @param: @param comparable
+ * @param: nums
+ * @return: void
+ */
+public static void bubbleSort(int[] nums)
+{
+    int tmp;
+    for (int i = 0; i < nums.length; i++) {
+        for (int j = 0; j < nums.length - i - 1; j++) {
+            if (nums[j] > nums[j + 1]) {
+                tmp = nums[j];
+                nums[j] = nums[j + 1];
+                nums[j + 1] = tmp;
+            }
+        }
+    }
+}
+```
+
+### 通用实现
+
+``` java
+/**
+ *
+ * Description: 冒泡排序的简单实现(支持泛型)
+ * 
+ * @param: <E>
+ * @param: comparable
  * @return: void
  * @throws
  */
 public static <E extends Comparable<? super E>> void bubbleSort(
             E[] comparable)
 {
-    boolean changed = false;
-    do {
-        changed = false;
-        for (int a = 0; a < comparable.length - 1; a++) {
-            if (comparable[a].compareTo(comparable[a + 1]) > 0) {
-                E tmp = comparable[a];
-                comparable[a] = comparable[a + 1];
-                comparable[a + 1] = tmp;
-                changed = true;
+    E tmpE;
+    for (int i = 0; i < comparable.length; i++) {
+        for (int j = 0; j < comparable.length - i - 1; j++) {
+            if (comparable[j].compareTo(comparable[j + 1]) > 0) {
+                tmpE = comparable[j];
+                comparable[j] = comparable[j + 1];
+                comparable[j + 1] = tmpE;
             }
         }
-    } while (changed);
+    }
 }
 ```
 
