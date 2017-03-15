@@ -1,4 +1,4 @@
----
+﻿---
 title: 位图排序的简单实现
 date: 2016-03-30 19:08:05
 tags: sort
@@ -30,7 +30,7 @@ toc: true
 
 <!--more-->
 
-```c
+``` java
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -136,4 +136,3 @@ void bitmap_sort()
     fclose(out);
 }
 ```
-

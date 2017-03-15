@@ -1,6 +1,6 @@
----
+﻿---
 title: 常用排序算法总结2一一选择排序
-date: 2016-08-31 21:18:12
+date: 2016-08-28 21:18:12
 tags: [sort, algorithm]
 toc: true
 categories: 算法
@@ -12,9 +12,9 @@ categories: 算法
 
 ![选择排序演示动画](http://img.blog.csdn.net/20160829211330824)
 
-选择排序的主要优点与数据移动有关。如果某个元素位于正确的最终位置上，则它不会被移动。选择排序每次交换一对元素，它们当中至少有一个将被移到其最终位置上，因此对n个元素的表进行排序总共进行至多n-1次交换。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。
-
 <!--more-->
+
+选择排序的主要优点与数据移动有关。如果某个元素位于正确的最终位置上，则它不会被移动。选择排序每次交换一对元素，它们当中至少有一个将被移到其最终位置上，因此对n个元素的表进行排序总共进行至多n-1次交换。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。
 
 ## 算法步骤
 
@@ -47,29 +47,62 @@ selection_sort(array, length)
 
 ## 代码实现（java）
 
-```
+### 一般实现
+
+``` java
 /**
  *
- * @Title: selectionSort
- * @Description: 选择排序的简单实现
- * @param: @param nums
+ * Description: 选择排序的简单实现
+ *
+ * @param: nums
  * @return: void
- * @throws
  */
 public static void selectionSort(int[] nums)
 {
-    for(int currentPlace = 0; currentPlace<nums.length-1; currentPlace++) {
-        int smallest = Integer.MAX_VALUE;
-        int smallestAt = currentPlace+1;
-        for(int check = currentPlace; check<nums.length; check++) {
-            if(nums[check]<smallest) {
+    int temp;
+    for (int currentPlace = 0; currentPlace < nums.length - 1; currentPlace++) {
+        int smallest = nums[currentPlace + 1];
+        int smallestAt = currentPlace + 1;
+        for (int check = currentPlace; check < nums.length; check++) {
+            if (nums[check] < smallest) {
                 smallestAt = check;
                 smallest = nums[check];
             }
         }
-        int temp = nums[currentPlace];
+        temp = nums[currentPlace];
         nums[currentPlace] = nums[smallestAt];
         nums[smallestAt] = temp;
+    }
+}
+```
+
+### 通用实现
+
+``` java
+/**
+ *
+ * Description: 选择排序的简单实现（支持泛型）
+ *
+ * @param: comparable
+ * @return: void
+ * @throws
+ */
+public static <E extends Comparable<? super E>> void selectionSort(
+            E[] comparable)
+{
+    E temp;
+    for (int currentPlace = 0; currentPlace < comparable.length - 1; currentPlace++) {
+        E smallest = comparable[currentPlace + 1];
+        int smallestAt = currentPlace + 1;
+        for (int check = currentPlace; check < comparable.length; check++) {
+            if (comparable[check].compareTo(smallest) < 0) {
+                smallestAt = check;
+                smallest = comparable[check];
+            }
+        }
+        temp = comparable[currentPlace];
+        comparable[currentPlace] = comparable[smallestAt];
+        comparable[smallestAt] = temp;
     }
 }
 ```
