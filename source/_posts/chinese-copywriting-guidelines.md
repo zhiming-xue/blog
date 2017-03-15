@@ -3,7 +3,7 @@ title: 中文文案排版指北
 date: 2017-03-15 23:32:33
 tags: 排版
 toc: true
-categories: 杂文
+categories: 杂项
 ---
 
 ## 前言
