@@ -1,4 +1,4 @@
-﻿---
+---
 title: 单链表反转问题
 date: 2016-10-10 20:12:02
 tags: [LeetCode, algorithm]

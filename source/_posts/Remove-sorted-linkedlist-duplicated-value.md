@@ -1,4 +1,4 @@
-﻿---
+---
 title: 去除已排序链表中的重复元素
 date: 2016-09-17 21:08:12
 tags: [LeetCode, algorithm]
