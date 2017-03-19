@@ -27,8 +27,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 
-# 忽略README文件的渲染
-skip_render: README.md
+# 忽略文件的渲染
+skip_render: 
+    - README.md 
+    - google47185088f91e2dd8.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
