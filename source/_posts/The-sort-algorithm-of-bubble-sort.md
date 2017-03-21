@@ -10,7 +10,7 @@ categories: 算法
 
 > 冒泡排序（英语：Bubble Sort）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。
 
-![冒泡排序过程](http://img.blog.csdn.net/20160828111556305)
+![冒泡排序过程](http://7xsd89.com1.z0.glb.clouddn.com/sort_bubble_animate.gif)
 
 <!--more-->
 
@@ -41,9 +41,7 @@ function bubble_sort (array, length) {
 ### 一般实现
 
 ``` java
-/**
- *
- * Description: 冒泡排序简单实现
+/** 冒泡排序简单实现
  *
  * @param: nums
  * @return: void
@@ -66,9 +64,7 @@ public static void bubbleSort(int[] nums)
 ### 通用实现
 
 ``` java
-/**
- *
- * Description: 冒泡排序的简单实现(支持泛型)
+/** 冒泡排序的简单实现(支持泛型)
  * 
  * @param: <E>
  * @param: comparable
@@ -93,5 +89,5 @@ public static <E extends Comparable<? super E>> void bubbleSort(
 
 ## 参考文章
 
-- [排序算法](https://wikipedia.org/wiki/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95#.E7.A9.A9.E5.AE.9A.E7.9A.84.E6.8E.92.E5.BA.8F)
-- [冒泡排序](https://wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F#JAVA)
+- [排序算法](https://zh.wikipedia.org/wiki/排序算法)
+- [冒泡排序](https://zh.wikipedia.org/wiki/冒泡排序#JAVA)

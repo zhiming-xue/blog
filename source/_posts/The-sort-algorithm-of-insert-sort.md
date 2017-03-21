@@ -10,7 +10,7 @@ categories: 算法
 
 > 插入排序（英语：Insertion Sort）是一种简单直观的排序算法。它的工作原理是通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实现上，通常采用in-place排序（即只需用到O(1)的额外空间的排序），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。
 
-![插入排序演示动画1](http://img.blog.csdn.net/20160830213017966)
+![插入排序演示动画1](http://7xsd89.com1.z0.glb.clouddn.com/sort_insert_animate.gif)
 
 <!--more-->
 
@@ -43,16 +43,14 @@ insertion_sort(array, length)
 }
 ```
 
-![插入排序动画演示2](http://img.blog.csdn.net/20160830213750142)
+![插入排序动画演示2](http://7xsd89.com1.z0.glb.clouddn.com/insertsort-example.gif)
 
 ## 代码实现（java）
 
 ### 一般实现
 
 ``` java
-/**
- *
- * Description: 插入排序的简单实现
+/** 插入排序的简单实现
  *
  * @param: nums
  * @return: void
@@ -74,9 +72,7 @@ public static void insertSort(int[] nums)
 ### 通用实现
 
 ``` java
-/**
- *
- * Description: 插入排序的简单实现（支持泛型）
+/** 插入排序的简单实现（支持泛型）
  *
  * @param: nums
  * @return: void
@@ -103,4 +99,4 @@ public static <E extends Comparable<? super E>> void insertSort(
 
 ## 参考文章
 
-- [插入排序](https://wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
+- [插入排序](https://zh.wikipedia.org/wiki/插入排序)

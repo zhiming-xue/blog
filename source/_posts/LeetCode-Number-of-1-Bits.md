@@ -107,5 +107,4 @@ ret = 0x50005308（01010000000000000101001100001000）
 ## Reference
 
 -  [Using bit operators](http://www.toves.org/books/bitops/#s3.3)
-
 - [LeetCode-Number of 1 Bits](https://leetcode.com/articles/number-1-bits/)

@@ -10,7 +10,7 @@ categories: 算法
 
 >快速排序（英语：Quick Sort），又称划分交换排序（partition-exchange sort），一种排序算法，最早由东尼·霍尔提出。在平均状况下，排序n个项目要Ο(n log n)次比较。在最坏状况下则需要Ο(n2)次比较，但这种状况并不常见。事实上，快速排序通常明显比其他Ο(n log n)算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。
 
-![快速排序演示动画1](http://img.blog.csdn.net/20160902204233276)
+![快速排序演示动画1](http://7xsd89.com1.z0.glb.clouddn.com/sort_quicksort_animate.gif)
 
 <!--more-->
 
@@ -43,23 +43,19 @@ function quicksort(q)
      }
 ```
 
-![快速排序演示动画2](http://img.blog.csdn.net/20160902204709904)
+![快速排序演示动画2](http://7xsd89.com1.z0.glb.clouddn.com/quicksort_partition_example.png)
 
 ## 代码实现（java）
 
 ``` java
-/**
- *
- * @Description: 快速排序，递归版
+/** 快速排序，递归版
  *
  * @param: <E>
  * @param: arr
  * @return: List<E>
  * @throws
  */
-public static <E extends Comparable<? super E>> List<E> quickSort(
-            List<E> arr)
-{
+public static <E extends Comparable<? super E>> List<E> quickSort( List<E> arr) {
     if (!arr.isEmpty()) {
         E pivot = arr.get(0); // This pivot can change to get faster results
 
@@ -68,7 +64,7 @@ public static <E extends Comparable<? super E>> List<E> quickSort(
         List<E> more = new LinkedList<E>();
 
         // Partition
-for (E i : arr) {
+        for (E i : arr) {
             if (i.compareTo(pivot) < 0)
                 less.add(i);
             else if (i.compareTo(pivot) > 0)
@@ -92,4 +88,4 @@ for (E i : arr) {
 
 ## 参考文章
 
-- [快速排序](https://wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
+- [快速排序](https://zh.wikipedia.org/wiki/快速排序)

@@ -116,4 +116,4 @@ int gcd(int m, int n)
 
 ## 参考文章
 
-- [中文维基百科一一算法](https://wikipedia.org/wiki/%E7%AE%97%E6%B3%95#.E6.B1.82.E6.9C.80.E5.A4.A7.E5.80.BC.E6.BC.94.E7.AE.97.E6.B3.95)
+- [算法](https://zh.wikipedia.org/wiki/算法)

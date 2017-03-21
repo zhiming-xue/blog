@@ -108,10 +108,6 @@ busuanzi_container_site_pv的作用是为防止计数服务访问出错或超时
 ## 参考
 
 * [Hexo博客添加网站统计](http://blog.wleyuan.me/2015/07/26/Hexo-AddStatistics/)
-
 * [给hexo配置上评论和访问量](http://jackroyal.github.io/2015/05/30/hexo-setting-with-comments-and-visitors/)
-
 * [Hexo使用多说教程](http://dev.duoshuo.com/threads/541d3b2b40b5abcd2e4df0e9)
-
 * [不蒜子](http://ibruce.info/2015/04/04/busuanzi/)
-

@@ -148,5 +148,4 @@ unit_test/test_sub.c:12:F:sub:test_sub:0: error, 6 - 2 != 4
 ## 参考
 
 * [Check—强大的C语言单元测试框架](http://blog.csdn.net/ZCF1002797280/article/details/50421336) 
-
 * [Tutorial: Basic Unit Testing](http://libcheck.github.io/check/doc/check_html/check_3.html) 

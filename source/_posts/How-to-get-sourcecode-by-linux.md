@@ -8,10 +8,8 @@ categories: Linux
 ## 直接在源码网站下载
 
 - [github](https://github.com/)
-
 - [gnu软件列表](http://ftp.gnu.org/)
-
-- Linux各种发行版在线软件列表，列如[ArchLinux在线软件包](https://www.archlinux.org/packages/?q=coreutils)
+- Linux各种发行版的在线软件列表，列如[ArchLinux在线软件包](https://www.archlinux.org/packages/?q=coreutils)
 
 ## 在Linux发行版下通过包管理器下载
 
@@ -43,9 +41,7 @@ makepkg -od
 makepkg简单用法
 
 - `makepkg -od` 获取软件源码，不进行构建
-
 - `makepkg -s` 自动处理软件相关依赖
-
 - `makepkg -e` 构建本地软件包
 
 如果你想要手动安装构建的软件包
@@ -67,9 +63,5 @@ sudo tar zxvf findutils-XXX.tar.gz
 ## 参考
 
 - [ArchLinux Wiki](https://wiki.archlinux.org/)
-
 - [GNU FTP](http://ftp.gnu.org/)
-
 - [如何查看linux命令源代码](http://blog.csdn.net/earbao/article/details/17955815)
-
-

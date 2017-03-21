@@ -10,7 +10,7 @@ categories: 算法
 
 > 选择排序（英语：Selection sort）是一种简单直观的排序算法。它首先在未排序的序列中找到最小（大）元素，存放到排序序列的起始位置，然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。
 
-![选择排序演示动画](http://img.blog.csdn.net/20160829211330824)
+![选择排序演示动画](http://7xsd89.com1.z0.glb.clouddn.com/sort_select_animate.gif)
 
 <!--more-->
 
@@ -43,16 +43,14 @@ selection_sort(array, length)
 }
 ```
 
-![选择排序演示动画二](http://img.blog.csdn.net/20160829211403730)
+![选择排序演示动画二](http://7xsd89.com1.z0.glb.clouddn.com/selectsort-example.gif)
 
 ## 代码实现（java）
 
 ### 一般实现
 
 ``` java
-/**
- *
- * Description: 选择排序的简单实现
+/** 选择排序的简单实现
  *
  * @param: nums
  * @return: void
@@ -79,9 +77,7 @@ public static void selectionSort(int[] nums)
 ### 通用实现
 
 ``` java
-/**
- *
- * Description: 选择排序的简单实现（支持泛型）
+/** 选择排序的简单实现（支持泛型）
  *
  * @param: comparable
  * @return: void
@@ -115,4 +111,4 @@ public static <E extends Comparable<? super E>> void selectionSort(
 
 ## 参考文章
 
-- [选择排序](https://wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
+- [选择排序](https://zh.wikipedia.org/wiki/选择排序)

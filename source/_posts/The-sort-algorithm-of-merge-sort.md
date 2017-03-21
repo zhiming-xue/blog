@@ -11,7 +11,7 @@ categories: 算法
 > 归并排序（英语：Merge sort），是创建在归并操作上的一种有效的排序算法，效率为O(n log n)。
 **归并操作**（merge），也叫归并算法，指的是将两个已经排序的序列合并成一个序列的操作。归并排序算法依赖归并操作。
 
-![归并排序算法演示动画](http://img.blog.csdn.net/20160831212632531)
+![归并排序算法演示动画](http://7xsd89.com1.z0.glb.clouddn.com/sort_merge_animate.gif)
 
 <!--more-->
 
@@ -35,9 +35,7 @@ categories: 算法
 ### 递归版
 
 ``` java
-/**
- * 
- * @Description: 归并排序，递归版
+/** 归并排序，递归版
  *
  * @param: <E>
  * @param: m
@@ -59,8 +57,7 @@ public static <E extends Comparable<? super E>> List<E> mergeSort(List<E> m) {
 	return result;
 }
 
-public static <E extends Comparable<? super E>> List<E> merge(List<E> left,
-		List<E> right) {
+public static <E extends Comparable<? super E>> List<E> merge(List<E> left, List<E> right) {
 	List<E> result = new ArrayList<E>();
 	Iterator<E> it1 = left.iterator();
 	Iterator<E> it2 = right.iterator();
@@ -101,9 +98,7 @@ public static <E extends Comparable<? super E>> List<E> merge(List<E> left,
 ### 迭代版
 
 ``` java
-/**
- * 
- * @Description: 归并排序，迭代版
+/** 归并排序，迭代版
  *
  * @param: nums
  * @return: void
@@ -149,4 +144,4 @@ public static void mergeSort(int[] nums) {
 
 ## 参考文章
 
-- [归并排序](https://wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)
+- [归并排序](https://zh.wikipedia.org/wiki/归并排序)
