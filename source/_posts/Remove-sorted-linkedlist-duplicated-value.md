@@ -24,15 +24,20 @@ categories: 算法
 ## 代码示例
 
 ``` java
-/**
- * 单链表的结构定义
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+/** 单链表定义
+ *
+ * @author: crane-yuan
+ * @date: 2016-9-17 下午12:11:13
  */
- 
+public class ListNode {
+    public int val;
+    public ListNode next;
+
+    public ListNode(int x) {
+        val = x;
+    }
+}
+
 public static ListNode deleteDuplicates(ListNode head)
 {
     if (head == null) {
@@ -98,7 +103,3 @@ public static ListNode deleteDuplicatesAll(ListNode head)
 ## 参考文章
 
 - [remove-duplicates-from-sorted-list](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
-
-
-
-
