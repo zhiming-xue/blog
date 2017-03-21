@@ -1,5 +1,4 @@
-# 我的独立博客
-### --[在角落的一只猫](http://crane-yuan.github.io)
+# [我的个人博客](http://crane-yuan.github.io)
 
 ## 简介
 
@@ -8,7 +7,5 @@
 ## 联系方式
 
 邮箱：yuanxingnepu@gmail.com
-
-GitHub：https://github.com/crane-yuan
 
 qq：1182248598
