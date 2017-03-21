@@ -62,60 +62,60 @@ public static ListNode reverseList(ListNode head) {
 ## 算法实现
 ``` java
 /** 单链表反转，反转指定区间内的节点
-*
-* @param head
-* @param m
-* @param n
-* @return ListNode
-*/
+ *
+ * @param head
+ * @param m
+ * @param n
+ * @return ListNode
+ */
 public static ListNode reverseBetween(ListNode head, int m, int n) {
-// 合法性检测
-if (head == null || m >= n || m < 1 || n < 1) {
-    return head;
-}
-/** 将链表按[m,n]区间分成三段
-*
-* first,second,third分别为每一段的头节点(注意，m=1也就是first与second相等的情况的处理)
-* first --> firstTail
-* second
-* third
-*/
-ListNode first = head;
-ListNode firstTail = first;
-ListNode second = first;
-ListNode third = first;
-ListNode current = first;
-int  i = 0;
-while (current != null) {
-    i++;
-    if (i == m - 1) {
-        firstTail = current;
+    // 合法性检测
+    if (head == null || m >= n || m < 1 || n < 1) {
+        return head;
     }
-    if (i == m) {
-        second = current;
+    /** 将链表按[m,n]区间分成三段
+     *
+     * first,second,third分别为每一段的头节点(注意，m=1也就是first与second相等的情况的处理)
+     * first --> firstTail
+     * second
+     * third
+     */
+    ListNode first = head;
+    ListNode firstTail = first;
+    ListNode second = first;
+    ListNode third = first;
+    ListNode current = first;
+    int  i = 0;
+    while (current != null) {
+        i++;
+        if (i == m - 1) {
+            firstTail = current;
+        }
+        if (i == m) {
+            second = current;
+        }
+        if (i == n) {
+            third = current.next ;
+            break ;
+        }
+        current = current.next ;
     }
-    if (i == n) {
-        third = current.next ;
-        break ;
+    // 进行中间second段的reverse
+    current = second;
+    ListNode prev = third;
+    ListNode next =  null ;
+    while (current != third) {
+        next = current. next ;
+        current. next  = prev;
+        prev = current;
+        current = next;
     }
-    current = current.next ;
-}
-// 进行中间second段的reverse
-current = second;
-ListNode prev = third;
-ListNode next =  null ;
-while (current != third) {
-    next = current. next ;
-    current. next  = prev;
-    prev = current;
-    current = next;
-}
-if (m == 1) {
-    first = prev;
-} else {
-    firstTail.next = prev;
-}
-return first;
+    if (m == 1) {
+        first = prev;
+    } else {
+        firstTail.next = prev;
+    }
+    return first;
 }
 ```
 
