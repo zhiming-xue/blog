@@ -11,7 +11,7 @@ categories: 算法
 > 堆（英语：Heap）是计算机科学中一类特殊的数据结构的统称。***堆通常是一个可以被看做一棵树的数组对象。***在队列中，调度程序反复提取队列中第一个作业并运行，因为实际情况中某些时间较短的任务将等待很长时间才能结束，或者某些不短小，但具有重要性的作业，同样应当具有优先权。堆即为解决此类问题设计的一种数据结构。
 
 堆的逻辑定义：
-![堆的逻辑定义](http://img.blog.csdn.net/20160903211152460)
+![堆的逻辑定义](http://7xsd89.com1.z0.glb.clouddn.com/heap-defination.png)
 
 堆的实现通过构造二叉堆（英语：binary heap），实为二叉树的一种；由于其应用的普遍性，当不加限定时，均指该数据结构的这种实现。这种数据结构具有以下性质。
 
@@ -24,7 +24,7 @@ categories: 算法
 
 > 堆排序（英语：Heap Sort）是指利用***堆***这种数据结构所设计的一种排序算法。堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点。
 
-![堆排序演示动画](http://img.blog.csdn.net/20160903210342596)
+![堆排序演示动画](http://7xsd89.com1.z0.glb.clouddn.com/sort_heapsort_animate.gif)
 
 <!--more-->
 
@@ -55,9 +55,7 @@ categories: 算法
 ## 代码实现（java）
 
 ``` java
-/**
- *
- * @Description: 堆排序的简单实现
+/** 堆排序的简单实现
  *
  * @param: a
  * @return: void
@@ -124,5 +122,5 @@ private static void siftDown(int[] a, int start, int end)
 
 ## 参考文章
 
-- [堆](https://wikipedia.org/wiki/%E5%A0%86_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29#.E5.A0.86.E6.8E.92.E5.BA.8F)
-- [堆排序](https://wikipedia.org/wiki/%E5%A0%86%E6%8E%92%E5%BA%8F#.E5.8F.83.E8.80.83)
+- [堆](https://zh.wikipedia.org/wiki/堆_%28数据结构%29)
+- [堆排序](https://zh.wikipedia.org/wiki/堆排序)
