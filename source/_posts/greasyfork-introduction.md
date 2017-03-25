@@ -17,6 +17,8 @@ categories: 杂项
 - [Tampermonkey](http://tampermonkey.net/)，支持Chrome, Firefox, Microsoft Edge, Safari, Opera Next, Maxthon
 - [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/)，支持Firefox
 
+<!--more-->
+
 ### 第二步：安装一个用户脚本
 [浏览此网站](https://greasyfork.org/zh-CN/scripts) 查找您想尝试的用户脚本。
 
