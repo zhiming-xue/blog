@@ -105,7 +105,10 @@ deploy:
     coding: git@git.coding.net:crane-yuan/crane-yuan.git,master
 
 # Duoshuo
-duoshuo_shortname: daemonghost
+#duoshuo_shortname: daemonghost
+
+# Disqus
+disqus_shortname: crane-yuan
 
 # https://github.com/unhealthy/hexo-all-minifier
 html_minifier:
